@@ -64,7 +64,15 @@ img{
     left: 0;
     right: 0;
     background-color: var(--second-modal-color);
+    transition: transform ,.3s ease;
+    /*De arriba */
+    transform: translate(0,-100%);
+   
 
+}
+
+.panel.is-active {
+    transform: translate(0, 0);
 }
 
 .panel-btn{
