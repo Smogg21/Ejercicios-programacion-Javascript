@@ -30,3 +30,28 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+
+/* Menu hamburguesa*/
+
+.header{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
+.header h1{
+    margin: 0 auto;
+    text-align: center;
+}
+.section{
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--container-width);
+    min-height: 100vh;
+    text-align: center;
+}
