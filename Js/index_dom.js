@@ -3,6 +3,7 @@ import countdown from "./cuenta_regresiva.js";
 import hamburguerMenu from "./menu-hamburguesa.js";
 import { digitalClock, alarm } from "./reloj.js";
 import { moveBall, shortcuts } from "./teclado.js";
+import darkTheme from "./tema-oscuro.js";
 
 const d = document;
 
@@ -16,6 +17,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
   countdown("countdown", "February 7, 2038 06:28:16", "Feliz y2k 2.0");
   scrollTopButton(".scroll-top-btn")
+  darkTheme(".dark-theme-btn", "dark-mode")
 });
 
 d.addEventListener("keydown", (e) => {

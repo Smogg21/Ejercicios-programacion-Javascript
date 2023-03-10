@@ -7,7 +7,6 @@ export function moveBall(e, ball, stage) {
   const $stage = d.querySelector(stage);
   const limitsBall = $ball.getBoundingClientRect();
   const limitsStage = $stage.getBoundingClientRect();
-
   // const move = (direction) => {}
 
   switch (e.keyCode) {
@@ -17,9 +16,11 @@ export function moveBall(e, ball, stage) {
       if (limitsBall.left > limitsStage.left) x--;
       break;
     case 38:
-      e.preventDefault();
       // move("up");
-      if (limitsBall.top > limitsStage.top) y--;
+      if (limitsBall.top > limitsStage.top) {
+        e.preventDefault();
+        y--;
+      }
       break;
     case 39:
       e.preventDefault();
@@ -27,9 +28,11 @@ export function moveBall(e, ball, stage) {
       if (limitsBall.right < limitsStage.right) x++;
       break;
     case 40:
-      e.preventDefault();
       // move("down");
-      if (limitsBall.bottom < limitsStage.bottom) y++;
+      if (limitsBall.bottom < limitsStage.bottom) {
+        e.preventDefault();
+        y++;
+      }
       break;
 
     default:
