@@ -16,11 +16,12 @@ d.addEventListener("DOMContentLoaded", (e) => {
     "#desactivar-alarma"
   );
   countdown("countdown", "February 7, 2038 06:28:16", "Feliz y2k 2.0");
-  scrollTopButton(".scroll-top-btn")
-  darkTheme(".dark-theme-btn", "dark-mode")
+  scrollTopButton(".scroll-top-btn");
 });
 
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
   moveBall(e, ".ball", ".stage");
 });
+
+darkTheme(".dark-theme-btn", "dark-mode");
