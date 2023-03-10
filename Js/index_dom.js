@@ -1,3 +1,4 @@
+import scrollTopButton from "./boton_scroll.js";
 import countdown from "./cuenta_regresiva.js";
 import hamburguerMenu from "./menu-hamburguesa.js";
 import { digitalClock, alarm } from "./reloj.js";
@@ -14,6 +15,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     "#desactivar-alarma"
   );
   countdown("countdown", "February 7, 2038 06:28:16", "Feliz y2k 2.0");
+  scrollTopButton(".scroll-top-btn")
 });
 
 d.addEventListener("keydown", (e) => {
