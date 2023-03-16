@@ -1,6 +1,7 @@
 import scrollTopButton from "./boton_scroll.js";
 import countdown from "./cuenta_regresiva.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
+import networkStatus from "./detección_red.js";
 import hamburguerMenu from "./menu-hamburguesa.js";
 import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
@@ -43,3 +44,4 @@ d.addEventListener("keydown", (e) => {
 });
 
 darkTheme(".dark-theme-btn", "dark-mode");
+networkStatus();
