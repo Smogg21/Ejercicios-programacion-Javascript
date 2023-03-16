@@ -43,6 +43,7 @@ export default function userDeviceInfo(id) {
     <ul>
     <li>User Agent: <b>${ua}</b></li>
     <li>Plataforma: <b>${isMobile.any()?isMobile.any():isDesktop.any()}</b></li>
+    <li>Navegador: <b>${isBrowser.any()}</b></li>
     </ul>
     `;
 }
