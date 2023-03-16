@@ -1,5 +1,6 @@
 import scrollTopButton from "./boton_scroll.js";
 import countdown from "./cuenta_regresiva.js";
+import userDeviceInfo from "./deteccion_dispositivos.js";
 import hamburguerMenu from "./menu-hamburguesa.js";
 import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
@@ -33,6 +34,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
 
 responsiveTester("responsive-tester")
+userDeviceInfo("user-device")
 });
 
 d.addEventListener("keydown", (e) => {
