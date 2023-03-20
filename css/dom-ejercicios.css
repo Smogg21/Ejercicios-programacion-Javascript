@@ -55,6 +55,12 @@ img {
 }
 .panel {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  visibility: hidden;
   z-index: 998;
   width: 100%;
   top: 0;
@@ -69,6 +75,7 @@ img {
 
 .panel.is-active {
   transform: translate(0, 0);
+  visibility: visible;
 }
 
 .panel-btn {
@@ -96,7 +103,7 @@ img {
 }
 
 .menu a {
-  padding: 2rem;
+  padding: 2rem;  
   width: inherit;
   display: block;
   font-size: 1.5rem;
