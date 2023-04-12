@@ -12,6 +12,7 @@ import { digitalClock, alarm } from "./reloj.js";
 import { moveBall, shortcuts } from "./teclado.js";
 import darkTheme from "./tema-oscuro.js";
 import draw from "./sorteo.js";
+import slider from "./carrusel.js"
 
 const d = document;
 
@@ -44,6 +45,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   getGeolocation("geolocation");
   searchFilters(".card-filter", ".card");
   draw("#winner-btn", ".player");
+  slider();
 });
 
 d.addEventListener("keydown", (e) => {
