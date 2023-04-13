@@ -346,7 +346,8 @@ img {
     font-size: 1rem;
 
   }
-  .menu a:hover{
+  .menu a:hover,
+  .menu a.active{
     color: var(--second-color);
     background-color: var(--main-color);
 
@@ -354,5 +355,8 @@ img {
   .scroll-top-btn{
     right:initial;
     left: calc(4.25rem + 1vw);
+  }
+  .section{
+    border: thin solid red;
   }
 }
